@@ -161,10 +161,10 @@
                                         </figure>
                                     </div>
                                     <div class="col d-flex flex-column justify-content-center pl-0">
-                                        <p class="h5 mb-15 mt-5 text-dark" id="ip1"><span class="h6">姓名：</span>张浩辉
+                                        <p class="h5 mb-15 mt-5 text-dark" id="ip1"><span class="h6">姓名：</span> </p>
                                         <p class="h6 mb-10 font-weight-normal" id="ip2">性别：</p>
-                                        <p class="h6 mb-10 font-weight-normal" id="ip3">院系：化学化工学院2023级研究生
-                                        <p class="h6 mb-10 font-weight-normal" id="ip4">学号：2303183034
+                                        <p class="h6 mb-10 font-weight-normal" id="ip3">院系：</p>
+                                        <p class="h6 mb-10 font-weight-normal" id="ip4">学号：</p>
                                     </div>
                                 </div>
 
@@ -241,8 +241,8 @@
             var d = new Date();
             var t = d.format("yyyy/M/d");
             var hour = d.getHours();
-            if (hour < 12) t += "上午";
-            else t += "下午";
+            if (hour < 12) t += " ";
+            else t += " ";
             t += d.format("hh:mm:ss");
             $w.html(t).css({
                 top: $wt + '%'
@@ -288,8 +288,8 @@
         if (gip5 != null) ip5.innerHTML += gip5;
         if (gip6 != null) ip6.src = gip6;
 
-        time1.innerText = new Date().format("yyyy-MM-dd") + " 上午";
-        time2.innerText = new Date().format("yyyy-MM-dd") + " 下午";
+        time1.innerText = new Date().format("yyyy-MM-dd") + " 08:00";
+        time2.innerText = new Date().format("yyyy-MM-dd") + " 22:00";
         let date = new Date();
         date.setTime(date.getTime() - (28 * 60 * 1000));
         time3.innerText = date.format("yyyy-MM-dd hh:mm");
