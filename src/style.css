@@ -3840,7 +3840,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .color-theme-blue .theme-header, .color-theme-blue header, .color-theme-blue .sidebar, .color-theme-blue .fullscreen-menu, .color-theme-blue .footer.dark {
-    background-color: #00a493;
+    background:linear-gradient(135deg, rgb(0, 180, 201) 5%, rgb(59, 108, 254) 100%);
 }
 
 @media (min-width: 800px) {
